@@ -17,7 +17,7 @@ class CreateAlunosTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('email');
-            $table->string('sexo');
+            $table->string('sexo')->nullable();
             $table->date('data_nascimento');
             $table->timestamps();
         });

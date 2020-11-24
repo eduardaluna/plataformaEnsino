@@ -1,17 +1,30 @@
 <?php
 
+use App\Http\Controllers\AlunoController;
+use App\Http\Controllers\CursoController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/listar/alunos', [AlunoController::class, 'listar']);
+
+Route::get('/criar/aluno', [AlunoController::class, 'criar']);
+
+Route::post('/salvar/aluno', [AlunoController::class, 'salvar']);
+
+Route::get('/visualizar/aluno/{id}', [AlunoController::class, 'visualizar']);
+
+Route::get('/editar/aluno/{id}', [AlunoController::class, 'editar']);
+
+Route::post('/atualizar/aluno/{id}', [AlunoController::class, 'atualizar']);
+
+Route::get('/remover/aluno/{id}', [AlunoController::class, 'remover']);
+
+Route::get('/listar/cursos', [CursoController::class, 'listar']);
+
+Route::get('/criar/curso', [CursoController::class, 'criar']);
+
+Route::post('/salvar/curso', [CursoController::class, 'salvar']);
+
+Route::get('/visualizar/curso/{id}', [CursoController::class, 'visualizar']);
 
 Route::get('/', function () {
     return view('welcome');

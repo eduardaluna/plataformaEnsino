@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eee456d5-e306-4c8b-88b2-08bf07a25835" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/alunos/criar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alunos/listar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AlunoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlunoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CursoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CursoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Aluno.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Aluno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Curso.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Curso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_24_004413_create_alunos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_24_004413_create_alunos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_24_004802_create_cursos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_24_004802_create_cursos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alunos/listar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alunos/listar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cursos/listar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cursos/listar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +199,14 @@
       <workItem from="1606242897841" duration="1794000" />
       <workItem from="1606244714660" duration="1795000" />
       <workItem from="1606247051954" duration="1783000" />
-      <workItem from="1606249744795" duration="1111000" />
+      <workItem from="1606249744795" duration="1801000" />
+      <workItem from="1606253842748" duration="2038000" />
+      <workItem from="1606255948889" duration="2165000" />
+      <workItem from="1606258134037" duration="1796000" />
+      <workItem from="1606259946969" duration="1796000" />
+      <workItem from="1606261789117" duration="1739000" />
+      <workItem from="1606263801671" duration="1489000" />
+      <workItem from="1606265624695" duration="110000" />
     </task>
     <servers />
   </component>
@@ -222,14 +226,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="345" y="170" width="665" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606262016993">
+      <screen x="0" y="27" width="1366" height="684" />
+    </state>
+    <state x="345" y="170" width="665" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.684@0.27.1366.684" timestamp="1606262016993" />
     <state x="416" y="117" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606181954054">
       <screen x="0" y="27" width="1366" height="684" />
     </state>
     <state x="416" y="117" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.684@0.27.1366.684" timestamp="1606181954054" />
-    <state x="416" y="126" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606249886802">
+    <state x="416" y="126" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606262662253">
       <screen x="0" y="27" width="1366" height="684" />
     </state>
-    <state x="416" y="126" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.684@0.27.1366.684" timestamp="1606249886802" />
+    <state x="416" y="126" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.684@0.27.1366.684" timestamp="1606262662253" />
     <state x="466" y="126" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606176828500">
       <screen x="0" y="27" width="1366" height="684" />
     </state>

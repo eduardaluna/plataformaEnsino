@@ -57,4 +57,14 @@ class AlunoController extends Controller{
         Aluno::where('id',$id)->delete();
         return redirect()->back()->with('sucesso','Aluno Removido');
     }
+
+    public function buscar(Request $request){
+        $busca = $request->get('busca');
+        $lista = Aluno::query()
+            ->where('nome', 'ilike', "%{$busca}%")
+            ->orWhere('email', 'ilike', "%{$busca}%")
+            ->orderBy('nome', 'asc')
+            ->get();
+        return view('alunos.listar',compact(['lista']));
+    }
 }

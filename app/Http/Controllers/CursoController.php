@@ -32,4 +32,27 @@ class CursoController extends Controller{
         $curso =  Curso::find($id);
         return view('cursos.visualizar',compact(['curso']));
     }
+
+    public function editar($id){
+        $curso = Curso::find($id);
+        return view('cursos.editar',compact(['curso']));
+    }
+
+    public function atualizar(Request $request, $id){
+        $curso = Curso::find($id);
+
+        try{
+            CursoValidator::validar($request->all());
+            $curso->update($request->all());
+            return ("atualizacao Concluida");
+        }
+        catch(ValidationException $exception){
+            return redirect('/editar/curso/'.$id)->withErrors($exception->getValidator())->withInput();
+        }
+    }
+
+    public function remover($id){
+        Curso::where('id',$id)->delete();
+        return redirect()->back()->with('sucesso','Curso Removido');
+    }
 }

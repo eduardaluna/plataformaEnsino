@@ -26,6 +26,14 @@ Route::post('/salvar/curso', [CursoController::class, 'salvar']);
 
 Route::get('/visualizar/curso/{id}', [CursoController::class, 'visualizar']);
 
+Route::get('/editar/curso/{id}', [CursoController::class, 'editar']);
+
+Route::post('/atualizar/curso/{id}', [CursoController::class, 'atualizar']);
+
+Route::get('/remover/curso/{id}', [CursoController::class, 'remover']);
+
+Route::get('/buscar', [AlunoController::class, 'buscar']);
+
 Route::get('/', function () {
     return view('welcome');
 });

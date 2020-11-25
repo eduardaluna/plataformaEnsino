@@ -18,11 +18,13 @@
                 </div>
                 <div class="container pt-3">
                     <div class="table-responsive">
-                        <table class="table table-bordered table-condensed table-striped">
+                        <table class="table table-condensed table-striped">
                             <thead>
                                 <tr>
                                     <th>Título</th>
                                     <th>Descrição</th>
+                                    <th></th>
+                                    <th></th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -32,6 +34,8 @@
                                     <td>{{$curso->titulo}}</td>
                                     <td>{{$curso->descricao}}</td>
                                     <td><a href="{{url('/visualizar/curso/'.$curso->id)}}" class="btn btn btn-secondary pull-right">Visualizar</a></td>
+                                    <td><a href="{{url('/editar/curso/'.$curso->id)}}" class="btn btn btn-secondary pull-right">Editar</a></td>
+                                    <td><a href="{{url('/remover/curso/'.$curso->id)}}" class="btn btn btn-secondary pull-right">Remover</a></td>
                                 </tr>
                             @endforeach
                             </tbody>

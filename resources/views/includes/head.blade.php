@@ -3,6 +3,11 @@
 <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.css">
 <title>Plataforma de Ensino</title>
 <style>
+    body {
+        overflow-x: hidden;
+        background-color: lightgrey;
+    }
+
     .required:after {
         content:" *";
         color: red;

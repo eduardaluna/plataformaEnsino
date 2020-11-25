@@ -18,7 +18,7 @@
                 </div>
                 <div class="container pt-3">
                     <div class="table-responsive">
-                        <table class="table table-bordered table-condensed table-striped">
+                        <table class="table table-condensed table-striped">
                             <thead>
                                 <tr>
                                     <th>Nome</th>

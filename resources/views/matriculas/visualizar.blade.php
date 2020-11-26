@@ -14,29 +14,26 @@
             <div class="card justify-content-center">
                 <br>
                 <div class="row justify-content-center">
-                    <h3>Visualizar Aluno</h3>
+                    <h3>Visualizar Matrícula</h3>
                 </div>
                 <div class="container pt-3">
                     <div class="table-responsive">
                         <table class="table table-bordered table-condensed table-striped">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
-                                    <th>Nome</th>
-                                    <th>E-mail</th>
-                                    <th>Sexo</th>
-                                    <th>Data de Nascimento</th>
-                                    <th>Matrícula</th>
+                                    <th>Id da Matrícula</th>
+                                    <th>Id do Aluno</th>
+                                    <th>Nome do Aluno</th>
+                                    <th>Curso Matriculado</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>{{$matricula->id}}</td>
                                     <td>{{$aluno->id}}</td>
                                     <td>{{$aluno->nome}}</td>
-                                    <td>{{$aluno->email}}</td>
-                                    <td>{{$aluno->sexo}}</td>
-                                    <td>{{Carbon\Carbon::parse($aluno->data_nascimento)->format('d/m/Y')}}</td>
-                                    <td>{{$aluno->matricula_id}}</td>
+                                    <td>{{$curso->titulo}}</td>
                                 </tr>
                             </tbody>
                         </table>

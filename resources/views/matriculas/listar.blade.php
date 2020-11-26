@@ -14,30 +14,26 @@
             <div class="card justify-content-center">
                 <br>
                 <div class="row justify-content-center">
-                    <h3>Visualizar Aluno</h3>
+                    <h3>Lista de Matrículas</h3>
                 </div>
                 <div class="container pt-3">
                     <div class="table-responsive">
-                        <table class="table table-bordered table-condensed table-striped">
+                        <table class="table table-condensed table-striped">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
-                                    <th>Nome</th>
-                                    <th>E-mail</th>
-                                    <th>Sexo</th>
-                                    <th>Data de Nascimento</th>
-                                    <th>Matrícula</th>
+                                    <th>Id da Matrícula</th>
+                                    <th>Id do Aluno</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach($lista as $matricula)
                                 <tr>
-                                    <td>{{$aluno->id}}</td>
-                                    <td>{{$aluno->nome}}</td>
-                                    <td>{{$aluno->email}}</td>
-                                    <td>{{$aluno->sexo}}</td>
-                                    <td>{{Carbon\Carbon::parse($aluno->data_nascimento)->format('d/m/Y')}}</td>
-                                    <td>{{$aluno->matricula_id}}</td>
+                                    <td>{{$matricula->id}}</td>
+                                    <td>{{$matricula->aluno_id}}</td>
+                                    <td><a href="{{url('/visualizar/matricula/'.$matricula->id)}}" class="btn btn btn-secondary pull-right">Visualizar</a></td>
                                 </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

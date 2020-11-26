@@ -14,7 +14,7 @@ class CreateMatriculasTable extends Migration
     public function up(){
         Schema::create('matriculas', function (Blueprint $table) {
             $table->id();
-            $table->integer('aluno_id')->unsigned()->nullable();
+            $table->integer('aluno_id')->unsigned();
             //$table->foreign('aluno_id')->references('id')->on('alunos')->onDelete('cascade');
             $table->integer('curso_id')->unsigned()->nullable();
             //$table->foreign('curso_id')->references('id')->on('cursos')->onDelete('cascade');

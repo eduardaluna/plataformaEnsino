@@ -18,6 +18,7 @@ class CreateAlunosTable extends Migration
             $table->string('nome');
             $table->string('email');
             $table->string('sexo')->nullable();
+            $table->integer('matricula_id')->unsigned()->nullable();
             $table->date('data_nascimento');
             $table->timestamps();
         });

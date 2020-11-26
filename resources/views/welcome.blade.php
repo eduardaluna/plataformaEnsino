@@ -24,11 +24,11 @@
                             <a href="{{ url('listar/cursos') }}" class="btn btn1 btn-secondary pull-right">Cursos</a><br><br>
                             <a href="{{ url('criar/curso') }}" class="btn btn1 btn-secondary pull-right">Criar Curso</a><br><br>
                         </div>
-                        <!--
+
                         <div class="col">
                             <a href="{{ url('listar/matriculas') }}" class="btn btn1 btn-secondary pull-right">Matrículas</a><br><br>
                             <a href="{{ url('criar/matricula') }}" class="btn btn1 btn-secondary pull-right">Criar Matrícula</a><br><br>
-                            <a href="{{ url('busca') }}" class="btn btn1 btn-secondary pull-right">Busca</a><br><br>
+                        <!--
                             <a href="{{ url('requisicao') }}" class="btn btn1 btn-secondary pull-right">Alunos Por Faixa Etária</a><br><br>
                         </div> -->
                     </div>

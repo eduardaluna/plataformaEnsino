@@ -9,14 +9,15 @@ class Aluno extends Model{
     use HasFactory;
 
     protected $fillable = [
-        'nome','email', 'sexo', 'data_nascimento'
+        'nome','email', 'sexo', 'data_nascimento', 'turma_id'
     ];
 
     public static $rules = [
         'nome' => 'required',
         'email' => 'required|email|unique:App\Models\Aluno,email',
         'sexo' => 'nullable',
-        'data_nascimento' => 'required|date'
+        'data_nascimento' => 'required|date',
+        'turma_id' => 'nullable'
     ];
 
     public static $messages = [

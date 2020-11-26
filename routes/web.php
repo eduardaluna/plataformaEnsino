@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AlunoController;
 use App\Http\Controllers\CursoController;
+use App\Http\Controllers\MatriculaController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/listar/alunos', [AlunoController::class, 'listar']);
@@ -31,6 +33,18 @@ Route::get('/editar/curso/{id}', [CursoController::class, 'editar']);
 Route::post('/atualizar/curso/{id}', [CursoController::class, 'atualizar']);
 
 Route::get('/remover/curso/{id}', [CursoController::class, 'remover']);
+
+Route::get('/listar/matriculas', [MatriculaController::class, 'listar']);
+
+Route::get('/criar/matricula', [MatriculaController::class, 'criar']);
+
+Route::post('/salvar/matricula', [MatriculaController::class, 'salvar']);
+
+Route::get('/visualizar/matricula/{id}', [MatriculaController::class, 'visualizar']);
+
+Route::get('/adicionar/curso/{id}', [MatriculaController::class, 'adicionarCurso']);
+
+Route::post('/adicionar/curso/{idc}/{idm}', [MatriculaController::class, 'adicionar']);
 
 Route::get('/buscar', [AlunoController::class, 'buscar']);
 

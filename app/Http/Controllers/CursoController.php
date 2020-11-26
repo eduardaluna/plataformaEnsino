@@ -21,7 +21,7 @@ class CursoController extends Controller{
         try{
             CursoValidator::validar($request->all());
             Curso::create($request->all());
-            return ("inscricao Concluida");
+            return redirect('listar/cursos');
         }
         catch(ValidationException $exception){
             return redirect('/criar/curso')->withErrors($exception->getValidator())->withInput();
@@ -44,7 +44,7 @@ class CursoController extends Controller{
         try{
             CursoValidator::validar($request->all());
             $curso->update($request->all());
-            return ("atualizacao Concluida");
+            return redirect('listar/cursos');
         }
         catch(ValidationException $exception){
             return redirect('/editar/curso/'.$id)->withErrors($exception->getValidator())->withInput();

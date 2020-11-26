@@ -23,7 +23,7 @@ class AlunoController extends Controller{
         try{
             AlunoValidator::validar($request->all());
             Aluno::create($request->all());
-            return ("inscricao Concluida");
+            return redirect('listar/alunos');
         }
         catch(ValidationException $exception){
             return redirect('/criar/aluno')->withErrors($exception->getValidator())->withInput();
@@ -42,11 +42,10 @@ class AlunoController extends Controller{
 
     public function atualizar(Request $request, $id){
         $aluno = Aluno::find($id);
-
         try{
             AlunoValidator::validar($request->all());
             $aluno->update($request->all());
-            return ("atualizacao Concluida");
+            return redirect('listar/alunos');
         }
         catch(ValidationException $exception){
             return redirect('/editar/aluno/'.$id)->withErrors($exception->getValidator())->withInput();
